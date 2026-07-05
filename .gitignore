@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Node (for when we adopt Astro)
+node_modules/
+dist/
+.astro/
