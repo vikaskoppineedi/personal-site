@@ -21,11 +21,14 @@ site/                 # everything served at the site root
 |---|---|
 | Repo | created via `gh` (public) |
 | Pages enablement + deploy | `.github/workflows/deploy.yml` (Actions) |
-| Custom domain | `site/CNAME` (declared as code, read by GitHub Pages) |
+| Custom domain + HTTPS | `scripts/setup-pages.sh` (gh API — run once, idempotent) |
 | DNS (`vikas` CNAME → `vikaskoppineedi.github.io`) | Terraform in `homelab-infra` (Cloudflare, `proxied=false`) |
 
-Push to `main` → the workflow uploads `site/` and deploys to Pages. The `CNAME`
-file in the artifact sets the custom domain automatically.
+Push to `main` → the workflow uploads `site/` and deploys to Pages.
+
+> **Note:** with the Actions deploy model the custom domain is a Pages *API
+> setting*, not the `site/CNAME` file (that only applies to legacy branch-based
+> Pages). `scripts/setup-pages.sh` sets it as code. Run it once after DNS resolves.
 
 ## Roadmap
 
