@@ -1,0 +1,23 @@
+---
+interface Props {
+  href: string;
+  emoji: string;
+  title: string;
+  sub?: string;
+  badge?: string;
+  external?: boolean;
+}
+
+const { href, emoji, title, sub, badge, external = false } = Astro.props;
+const rel = external ? 'noopener noreferrer' : undefined;
+const target = external ? '_blank' : undefined;
+---
+
+<a class="link" href={href} rel={rel} target={target}>
+  <span class="emoji" aria-hidden="true">{emoji}</span>
+  <span class="body">
+    {title}
+    {sub && <span class="sub">{sub}</span>}
+  </span>
+  {badge && <span class="badge">{badge}</span>}
+</a>

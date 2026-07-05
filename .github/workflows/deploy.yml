@@ -17,25 +17,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest  # GitHub-hosted, free for public repos
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build with Astro
+        uses: withastro/action@v3
+        with:
+          node-version: 22
+          # installs deps, runs `astro build`, and uploads ./dist as the Pages artifact
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true   # enables Pages (build_type=workflow) on first run
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./site       # site/CNAME becomes /CNAME -> sets custom domain as code
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

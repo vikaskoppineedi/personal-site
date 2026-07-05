@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LinkCard from '../components/LinkCard.astro';
+---
+
+<BaseLayout title="Vikas Koppineedi">
+  <div class="avatar" aria-hidden="true">V</div>
+  <h1 class="name">Vikas Koppineedi</h1>
+  <p class="tagline">Engineer · DJ · building things</p>
+
+  <nav class="links">
+    <LinkCard
+      href="/music/"
+      emoji="🎧"
+      title="My Music"
+      sub="Auto-updated Spotify playlists"
+      badge="soon"
+    />
+    <LinkCard href="/blog/" emoji="✍️" title="Tech Blog" sub="Notes on what I'm building" />
+    <LinkCard href="/portfolio/" emoji="💼" title="Portfolio" sub="Projects & work" />
+    <LinkCard href="/resume/" emoji="📄" title="Resume" sub="Experience & CV" />
+    <LinkCard
+      href="https://github.com/vikaskoppineedi"
+      emoji="🐙"
+      title="GitHub"
+      sub="Code & open source"
+      external
+    />
+  </nav>
+
+  <footer>vikas.koppineedi.com</footer>
+</BaseLayout>
