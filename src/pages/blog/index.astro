@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+
+<BaseLayout title="Blog — Vikas Koppineedi" description="Tech notes by Vikas Koppineedi.">
+  <a class="back" href="/">← back</a>
+  <h1 class="page">✍️ Tech Blog</h1>
+  <p class="lead">Notes on what I'm building.</p>
+
+  {
+    posts.length === 0 ? (
+      <p class="lead">No posts yet — check back soon.</p>
+    ) : (
+      <ul class="list">
+        {posts.map((post) => (
+          <li>
+            <a class="item" href={`/blog/${post.id}/`}>
+              <div class="item-title">{post.data.title}</div>
+              <div class="item-meta">
+                {fmt(post.data.date)}
+                {post.data.description ? ` · ${post.data.description}` : ''}
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <footer>vikas.koppineedi.com</footer>
+</BaseLayout>

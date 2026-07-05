@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+
+<BaseLayout title={`${post.data.title} — Vikas Koppineedi`} description={post.data.description}>
+  <a class="back" href="/blog/">← blog</a>
+  <h1 class="page">{post.data.title}</h1>
+  <p class="lead">{fmt(post.data.date)}</p>
+  <article class="prose">
+    <Content />
+  </article>
+  <footer>vikas.koppineedi.com</footer>
+</BaseLayout>
