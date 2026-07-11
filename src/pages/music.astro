@@ -2,11 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import music from '../data/music.json';
 
-const { mirror, languages, updated_at } = music as {
+type PL = { id: string; name: string; url: string; cover: string | null; track_count: number };
+const { mirror, languages, playlists, updated_at } = music as {
   updated_at: string;
   mirror: null | { name: string; url: string; cover: string | null; track_count: number };
-  languages: { id: string; name: string; url: string; cover: string | null; track_count: number }[];
+  languages: PL[];
+  playlists?: PL[];
 };
+const morePlaylists: PL[] = playlists ?? [];
 
 const prettyLang = (name: string) =>
   name
@@ -56,6 +59,25 @@ const totalLang = languages.reduce((n, p) => n + p.track_count, 0);
     ))}
   </div>
 
+  {morePlaylists.length > 0 && (
+    <>
+      <h2 class="section more">More playlists <span class="section-sub">{morePlaylists.length} I made</span></h2>
+      <div class="pl-grid">
+        {morePlaylists.map((pl) => (
+          <a class="pl" href={pl.url} target="_blank" rel="noopener">
+            {pl.cover
+              ? <img class="pl-cover" src={pl.cover} alt="" loading="lazy" width="56" height="56" />
+              : <div class="pl-cover placeholder" aria-hidden="true">🎵</div>}
+            <div class="pl-body">
+              <span class="pl-name">{pl.name}</span>
+              <span class="pl-count">{pl.track_count.toLocaleString()} tracks</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+
   <p class="note">
     Auto-updated by my <code>spotify-library-manager</code> sync engine. New likes flow
     in daily; anything ambiguous waits in a private review list until I sort it.
@@ -78,6 +100,7 @@ const totalLang = languages.reduce((n, p) => n + p.track_count, 0);
   .hero-body .count { color: var(--muted); font-size: 14px; }
 
   .section { font-size: 18px; margin: 0 0 14px; display: flex; align-items: baseline; gap: 10px; }
+  .section.more { margin-top: 40px; }
   .section-sub { color: var(--muted); font-size: 13px; font-weight: 400; }
 
   .pl-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }

@@ -67,8 +67,8 @@ Push to `main` → Astro builds → the `dist/` artifact deploys to Pages.
 repo: its daily GitHub Action syncs the Spotify library, then pushes an updated
 `music.json` here (via a deploy key) **only when the content changed**. That push
 triggers `deploy.yml`, and `music.astro` renders the snapshot at build time — the
-public mirror plus each language playlist, with covers and counts. No secrets or
-Spotify code live in this repo.
+public mirror, each language playlist, and every other playlist I created (covers
+and counts). No secrets or Spotify code live in this repo.
 
 ## Roadmap
 

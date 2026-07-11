@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T00:14:13+00:00",
+  "updated_at": "2026-07-11T01:28:58+00:00",
   "mirror": {
     "id": "3SxxXBevKOY9QiCKFTQPKV",
     "name": "Vikas's Liked songs",
@@ -47,6 +47,192 @@
       "url": "https://open.spotify.com/playlist/7Ei1eHtDpyQ5rcyvpEoj9R",
       "cover": "https://mosaic.scdn.co/640/ab67616d00001e020e12fd71f62b3715e1ac885dab67616d00001e02c5e1a934ca610a0bd6c1318eab67616d00001e02e174e4768d4b5b55edf25067ab67616d00001e02f3df704a0a3866a54ccb4baa",
       "track_count": 42,
+      "public": true
+    }
+  ],
+  "playlists": [
+    {
+      "id": "3LNnsBCaXU7nZZXhG3MUDQ",
+      "name": "Atmos DeMo",
+      "url": "https://open.spotify.com/playlist/3LNnsBCaXU7nZZXhG3MUDQ",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e024154754bb99fe8dfc6704ddaab67616d00001e0264ba66f8a81c52364e55db50ab67616d00001e02ab5fa820a58fbae783f08981ab67616d00001e02b124fedaeb962aec58a65b38",
+      "track_count": 221,
+      "public": true
+    },
+    {
+      "id": "5Q1YTpDBULzQ3oBxzOL95d",
+      "name": "Discovered on Offtrack",
+      "url": "https://open.spotify.com/playlist/5Q1YTpDBULzQ3oBxzOL95d",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e024c9cc2828df2bb9f0827ba64ab67616d00001e02667501f7ae3f283401cfba7fab67616d00001e02d08c116da1a4931ee9043f34ab67616d00001e02eb3b5642ed2a31a14b42aec2",
+      "track_count": 209,
+      "public": true
+    },
+    {
+      "id": "2WRkvc8CGSOYO4sb8kWFXb",
+      "name": "Night-time-melodies",
+      "url": "https://open.spotify.com/playlist/2WRkvc8CGSOYO4sb8kWFXb",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e0204f42b23a1aee55310aa1217ab67616d00001e022ccb009430c03e99572b7483ab67616d00001e0242f63348d458d7fb99ba114fab67616d00001e0246a2e185980b082e503f4212",
+      "track_count": 114,
+      "public": true
+    },
+    {
+      "id": "22tYB0dGBT6ic1tinT2CWS",
+      "name": "Bollywood Item Songs \ud83d\udc83",
+      "url": "https://open.spotify.com/playlist/22tYB0dGBT6ic1tinT2CWS",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e02108d10d84153ff78d2197f62ab67616d00001e02a08c7022ea424b2f048b46e9ab67616d00001e02ae4f158801a0abc9ee7318e4ab67616d00001e02b22e21de789378f223e1795f",
+      "track_count": 105,
+      "public": true
+    },
+    {
+      "id": "4KlojUwAl03AC5uFQ8RvkJ",
+      "name": "HOUSE",
+      "url": "https://open.spotify.com/playlist/4KlojUwAl03AC5uFQ8RvkJ",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e020445db0af0b11d14db1c4cfaab67616d00001e02a123b0691b660bfe112220c7ab67616d00001e02ade9819e0c80a1114a769630ab67616d00001e02e992b113fdd95db0fe33953e",
+      "track_count": 85,
+      "public": true
+    },
+    {
+      "id": "5om9WB69HUeKmtV0DoyQA2",
+      "name": "Afro house",
+      "url": "https://open.spotify.com/playlist/5om9WB69HUeKmtV0DoyQA2",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e02015fc7d83738ff3119183fdfab67616d00001e02552fc22d6fe674eb4a47ec4dab67616d00001e02ea0332d1144299d8d64f2619ab67616d00001e02f16db81ab9e050a6eb4745ae",
+      "track_count": 69,
+      "public": true
+    },
+    {
+      "id": "1w1eK5vGecAnuu3225o9op",
+      "name": "Techno-gym",
+      "url": "https://open.spotify.com/playlist/1w1eK5vGecAnuu3225o9op",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e026b0848410ff13596fbea8329ab67616d00001e0280ec3be377f0702fc7f7af91ab67616d00001e02b65ccf362b59a6672d22bb3dab67616d00001e02c1406f59658a6ca42b025a48",
+      "track_count": 59,
+      "public": true
+    },
+    {
+      "id": "5rCvZpodMppLdGsZDBqcSq",
+      "name": "Party songs",
+      "url": "https://open.spotify.com/playlist/5rCvZpodMppLdGsZDBqcSq",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e025375a4136d2044531b787ad8ab67616d00001e0260f2372d71d968641d3b3d03ab67616d00001e028cd26989f23d90fbe06d57b0ab67616d00001e02ca210c19fbfd1e1f28637677",
+      "track_count": 53,
+      "public": true
+    },
+    {
+      "id": "7lcQsdt5MhBzwQwsuKKR1L",
+      "name": "TECHNO",
+      "url": "https://open.spotify.com/playlist/7lcQsdt5MhBzwQwsuKKR1L",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e024bbc681c9a4a97abfee58763ab67616d00001e0288ebf4ac1447fcf595e899eaab67616d00001e0293c80a73f6a1de25b4bb26a2ab67616d00001e02b5dd03f703b10642861af3fd",
+      "track_count": 44,
+      "public": true
+    },
+    {
+      "id": "7HEnX2pByKePnZBlQUeORi",
+      "name": "DJ-Prospects",
+      "url": "https://open.spotify.com/playlist/7HEnX2pByKePnZBlQUeORi",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e021063dfb1d0f54d0803c51be6ab67616d00001e026e971daef34501166685c3a7ab67616d00001e02b415fc6505fe00219d017df4ab67616d00001e02b9d370dc86a2e85edc9a46c3",
+      "track_count": 44,
+      "public": true
+    },
+    {
+      "id": "1q4tt6N0S0QO0HqG1g68aR",
+      "name": "INDO-HOUSE-TECHNO",
+      "url": "https://open.spotify.com/playlist/1q4tt6N0S0QO0HqG1g68aR",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e0252ce1d0acab643d55a7d8df5ab67616d00001e02c6d61475d99171449e6f3887ab67616d00001e02dd9f3dfd2eb48f8d116e9471ab67616d00001e02f51a7e48d969c8f97212834b",
+      "track_count": 36,
+      "public": true
+    },
+    {
+      "id": "1FSbBVxAY9Hk3h1LlMW2Hh",
+      "name": "Top Played Last Year",
+      "url": "https://open.spotify.com/playlist/1FSbBVxAY9Hk3h1LlMW2Hh",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e020576b161a9f480c92f2f4ad1ab67616d00001e02432d5203e60ae236cde678e4ab67616d00001e02ca210c19fbfd1e1f28637677ab67616d00001e02cbe25308c44d2ec219976b3b",
+      "track_count": 35,
+      "public": true
+    },
+    {
+      "id": "2PhwKtoAxtOu63D50xcyoZ",
+      "name": "Telugu mass dj",
+      "url": "https://open.spotify.com/playlist/2PhwKtoAxtOu63D50xcyoZ",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e021b56cd6e2dc357a4fbee8bdaab67616d00001e02202f0714656c05b76c171614ab67616d00001e0225a1872b13fb6aa3599677daab67616d00001e024a254e1e2db5cf341bde4e61",
+      "track_count": 29,
+      "public": true
+    },
+    {
+      "id": "1ZIwYckoit6ok28VQmvUGm",
+      "name": "Background-Score",
+      "url": "https://open.spotify.com/playlist/1ZIwYckoit6ok28VQmvUGm",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e020188dda95e6624e9c665beb5ab67616d00001e0216ea21828980a9020a8c2cf2ab67616d00001e025d14e857caf68271fbf5d3e0ab67616d00001e02641e6b71cc65c24b09782359",
+      "track_count": 16,
+      "public": true
+    },
+    {
+      "id": "4Q6MBi38oYYex6aIlokwQi",
+      "name": "gOLDIES",
+      "url": "https://open.spotify.com/playlist/4Q6MBi38oYYex6aIlokwQi",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e022b808360ba09dcb2bacd0c19ab67616d00001e025375a4136d2044531b787ad8ab67616d00001e025ceb965f7ebfe9e0002379e0ab67616d00001e02b16b233832cac34f7d64c93e",
+      "track_count": 15,
+      "public": true
+    },
+    {
+      "id": "4WSJYVwDqSPs4TGoqHAGsc",
+      "name": "Local_songs",
+      "url": "https://open.spotify.com/playlist/4WSJYVwDqSPs4TGoqHAGsc",
+      "cover": null,
+      "track_count": 15,
+      "public": true
+    },
+    {
+      "id": "0bkkdaMdu91ONk7UUZkEOJ",
+      "name": "Drum n Bass",
+      "url": "https://open.spotify.com/playlist/0bkkdaMdu91ONk7UUZkEOJ",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e0234289a3c93db5fc4036ca9d8ab67616d00001e02571ca3d76372773bea064a2bab67616d00001e0286391c2701404356d800cec7ab67616d00001e02a73b105324ccad3c19e8f4c4",
+      "track_count": 13,
+      "public": true
+    },
+    {
+      "id": "0m2AyIfvoY2gxXwcJie6m4",
+      "name": "Chenda Melam Band",
+      "url": "https://open.spotify.com/playlist/0m2AyIfvoY2gxXwcJie6m4",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e022f3dac748163fff5830a3919ab67616d00001e024a27538ab83964542f1f78a6ab67616d00001e0294c665bca6724c8de19c42e7ab67616d00001e029da0fdd65fe5c68dca9b2666",
+      "track_count": 10,
+      "public": true
+    },
+    {
+      "id": "05MrRDm27abSJKLidC8csS",
+      "name": "Michael Jackson ",
+      "url": "https://open.spotify.com/playlist/05MrRDm27abSJKLidC8csS",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e024121faee8df82c526cbab2beab67616d00001e02605223665713cdf285ee0c81ab67616d00001e0279b8d5f5821bddae3bc5e6a9ab67616d00001e02bf4cf0f48b94d0c8297b751a",
+      "track_count": 9,
+      "public": true
+    },
+    {
+      "id": "4dY9sNqReMCuucjZQY81fE",
+      "name": "Random finds",
+      "url": "https://open.spotify.com/playlist/4dY9sNqReMCuucjZQY81fE",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e025845427e5d14e3f39e0ae9ffab67616d00001e026669a059f9d7d250c5e9d962ab67616d00001e0285f569e947dcc39a5ba487eeab67616d00001e02a411ea0987dd598d09b1767f",
+      "track_count": 8,
+      "public": true
+    },
+    {
+      "id": "0oUWB2Cyn3HMKZvtDWQXu2",
+      "name": "Edm-trap",
+      "url": "https://open.spotify.com/playlist/0oUWB2Cyn3HMKZvtDWQXu2",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e0200ca4a2a5929a022f4c7ee9bab67616d00001e025fad6c83707f0041f9140cd2ab67616d00001e02bbc724cc11e8aa91df949499ab67616d00001e02c5b786aeeb2619a568baead7",
+      "track_count": 7,
+      "public": true
+    },
+    {
+      "id": "1QK8QQR5Qy55eJI9bQTiFk",
+      "name": "FAV_DRUM&BASS",
+      "url": "https://open.spotify.com/playlist/1QK8QQR5Qy55eJI9bQTiFk",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e02006ae5f75389c19955930f4bab67616d00001e0200f5b7510cbed3e510ac8d7bab67616d00001e029d8bb94c45b88a8b7abc5c7aab67616d00001e02c49f59a5fb56e49d55b36558",
+      "track_count": 6,
+      "public": true
+    },
+    {
+      "id": "7s08v200x9MSgi6DYJ15vP",
+      "name": "God songs",
+      "url": "https://open.spotify.com/playlist/7s08v200x9MSgi6DYJ15vP",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e024fb9831e05240c77b001437aab67616d00001e02692a6dd5adeb24ec28d66613ab67616d00001e028cecdc0b322157c99e7bf2bdab67616d00001e02e144c1288793dfabf56f4840",
+      "track_count": 5,
       "public": true
     }
   ]
