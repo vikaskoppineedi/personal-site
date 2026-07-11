@@ -16,13 +16,14 @@ src/
   styles/global.css             # design system (dark/light, accent)
   content.config.ts             # blog content collection schema
   content/blog/*.md             # blog posts
+  data/music.json               # Spotify snapshot (auto-updated by spotify-library-manager)
   pages/
     index.astro                 # linktree landing
     blog/index.astro            # blog list
     blog/[...slug].astro        # blog post pages
     portfolio.astro
     resume.astro
-    music.astro                 # placeholder → auto-generated in a later milestone
+    music.astro                 # renders src/data/music.json (mirror + language playlists)
 public/                         # static assets (favicon, resume.pdf, …)
 scripts/setup-pages.sh          # one-time Pages + custom-domain provisioning (as code)
 .github/workflows/deploy.yml    # build Astro + deploy to Pages on push to main
@@ -59,8 +60,16 @@ Push to `main` → Astro builds → the `dist/` artifact deploys to Pages.
 - **Resume:** drop `public/resume.pdf` and uncomment the download link in
   `src/pages/resume.astro`.
 
+## The `/music` page
+
+`src/data/music.json` is written by the private
+[`spotify-library-manager`](https://github.com/vikaskoppineedi/spotify-library-manager)
+repo: its daily GitHub Action syncs the Spotify library, then pushes an updated
+`music.json` here (via a deploy key) **only when the content changed**. That push
+triggers `deploy.yml`, and `music.astro` renders the snapshot at build time — the
+public mirror plus each language playlist, with covers and counts. No secrets or
+Spotify code live in this repo.
+
 ## Roadmap
 
-- `/music/` auto-generated from the private `spotify-library-manager` repo
-  (emits `music.json` consumed at build time).
 - Fill in portfolio + resume.

@@ -1,17 +1,102 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import music from '../data/music.json';
+
+const { mirror, languages, updated_at } = music as {
+  updated_at: string;
+  mirror: null | { name: string; url: string; cover: string | null; track_count: number };
+  languages: { id: string; name: string; url: string; cover: string | null; track_count: number }[];
+};
+
+const prettyLang = (name: string) =>
+  name
+    .replace(/-SONGS$/i, '')
+    .replace(/-/g, ' / ')
+    .toLowerCase()
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+
+const updated = updated_at
+  ? new Date(updated_at).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+  : null;
+
+const totalLang = languages.reduce((n, p) => n + p.track_count, 0);
 ---
 
-<BaseLayout title="Music — Vikas Koppineedi" description="Auto-updated Spotify playlists.">
+<BaseLayout title="Music — Vikas Koppineedi" description="My Spotify library, auto-synced: a public mirror of my Liked Songs plus language playlists.">
   <a class="back" href="/">← back</a>
   <h1 class="page">🎧 My Music</h1>
   <p class="lead">
-    An auto-updated view of my Spotify library — public playlists refreshed
-    automatically from my Liked Songs, sorted by language and vibe.
+    My Spotify library, kept in sync automatically — a public mirror of my Liked
+    Songs, sorted into language playlists. {updated && <>Last updated {updated}.</>}
   </p>
-  <p class="lead">
-    Coming soon: this section is generated from my private
-    <code>spotify-library-manager</code> sync engine.
+
+  {mirror && (
+    <a class="hero" href={mirror.url} target="_blank" rel="noopener">
+      {mirror.cover && <img class="hero-cover" src={mirror.cover} alt="" loading="lazy" width="120" height="120" />}
+      <div class="hero-body">
+        <span class="kicker">▶ Mirror of my Liked Songs · public</span>
+        <h2>{mirror.name}</h2>
+        <p class="count">{mirror.track_count.toLocaleString()} tracks · follow on Spotify →</p>
+      </div>
+    </a>
+  )}
+
+  <h2 class="section">By language <span class="section-sub">{totalLang.toLocaleString()} tracks</span></h2>
+  <div class="pl-grid">
+    {languages.map((pl) => (
+      <a class="pl" href={pl.url} target="_blank" rel="noopener">
+        {pl.cover
+          ? <img class="pl-cover" src={pl.cover} alt="" loading="lazy" width="56" height="56" />
+          : <div class="pl-cover placeholder" aria-hidden="true">🎵</div>}
+        <div class="pl-body">
+          <span class="pl-name">{prettyLang(pl.name)}</span>
+          <span class="pl-count">{pl.track_count.toLocaleString()} tracks</span>
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <p class="note">
+    Auto-updated by my <code>spotify-library-manager</code> sync engine. New likes flow
+    in daily; anything ambiguous waits in a private review list until I sort it.
   </p>
+
   <footer>vikas.koppineedi.com</footer>
 </BaseLayout>
+
+<style>
+  .hero {
+    display: flex; gap: 18px; align-items: center;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 18px; margin-bottom: 36px;
+    transition: transform .12s ease, border-color .12s ease;
+  }
+  .hero:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .hero-cover { border-radius: 10px; object-fit: cover; flex-shrink: 0; }
+  .kicker { color: var(--accent); font-size: 12px; font-weight: 600; }
+  .hero-body h2 { font-size: 20px; margin: 4px 0 6px; }
+  .hero-body .count { color: var(--muted); font-size: 14px; }
+
+  .section { font-size: 18px; margin: 0 0 14px; display: flex; align-items: baseline; gap: 10px; }
+  .section-sub { color: var(--muted); font-size: 13px; font-weight: 400; }
+
+  .pl-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  @media (min-width: 560px) { .pl-grid { grid-template-columns: 1fr 1fr; } }
+  .pl {
+    display: flex; align-items: center; gap: 14px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 14px;
+    transition: transform .12s ease, border-color .12s ease;
+  }
+  .pl:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .pl-cover { border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+  .pl-cover.placeholder {
+    width: 56px; height: 56px; display: grid; place-items: center;
+    background: var(--card-hover); font-size: 22px;
+  }
+  .pl-body { display: flex; flex-direction: column; min-width: 0; }
+  .pl-name { font-weight: 600; font-size: 15px; }
+  .pl-count { color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+  .note { color: var(--muted); font-size: 13px; margin-top: 32px; }
+</style>
