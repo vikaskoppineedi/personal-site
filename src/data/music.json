@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-08T15:11:40+00:00",
+  "updated_at": "2026-11-09T18:48:28+00:00",
   "mirror": {
     "id": "3SxxXBevKOY9QiCKFTQPKV",
     "name": "Vikas's Liked songs",
     "url": "https://open.spotify.com/playlist/3SxxXBevKOY9QiCKFTQPKV",
     "cover": "https://mosaic.scdn.co/640/ab67616d00001e020d66934f5370419636c78f18ab67616d00001e023c29c8c7da00a34f0e94e271ab67616d00001e02c261fb67f16d5106f30393d6ab67616d00001e02dd7ea25884f7fbbe8ae59a4b",
-    "track_count": 2062,
+    "track_count": 2063,
     "public": true
   },
   "languages": [
@@ -14,7 +14,7 @@
       "name": "TELUGU-SONGS",
       "url": "https://open.spotify.com/playlist/2d9pU8mfv86o0QCIJfSvLw",
       "cover": "https://mosaic.scdn.co/640/ab67616d00001e02641e6b71cc65c24b09782359ab67616d00001e0284351604b643064b97982db5ab67616d00001e02964d6b6215ac9d2c6ecdf2d0ab67616d00001e02b9e6c59aee9d6380c2959a89",
-      "track_count": 1328,
+      "track_count": 1334,
       "public": true
     },
     {
@@ -207,7 +207,7 @@
       "id": "4dY9sNqReMCuucjZQY81fE",
       "name": "Random finds",
       "url": "https://open.spotify.com/playlist/4dY9sNqReMCuucjZQY81fE",
-      "cover": "https://mosaic.scdn.co/640/ab67616d00001e025845427e5d14e3f39e0ae9ffab67616d00001e026669a059f9d7d250c5e9d962ab67616d00001e0285f569e947dcc39a5ba487eeab67616d00001e02a411ea0987dd598d09b1767f",
+      "cover": "https://mosaic.scdn.co/640/ab67616d00001e026669a059f9d7d250c5e9d962ab67616d00001e0285f569e947dcc39a5ba487eeab67616d00001e02a411ea0987dd598d09b1767fab67616d00001e02ea0216e3ba0a29c478e87b3b",
       "track_count": 8,
       "public": true
     },
